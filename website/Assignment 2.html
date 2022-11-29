@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    </body>
+    <script>
+
+
+ function  Check_Divide(){
+    var Num2=document.getElementById("Numm2").value;
+    if(Num2==0)
+return true;
+    else
+    return false;
+}
+
+
+        var Number=[]; 
+        document.write("View plainprint?<br>")
+        for(var i=1;i<=2;i++){
+document.write("Number"+i+":");
+Number[i]= document.createElement("input");
+Number[i].type = "text";
+Number[i].id = "Numm"+i;
+document.body.appendChild(Number[i]);
+document.write("<br>");
+        }
+var calculate=[];
+var Type=["ADD","SUB","MUL","DIV","MOD"];
+for(var j=0;j<5;j++){
+    calculate[j]= document.createElement("button");
+calculate[j].innerHTML =Type[j];
+calculate[j].id=Type[j];
+calculate[j].type = "button";
+document.body.appendChild(calculate[j]);
+}
+
+        document.getElementById("ADD").addEventListener('click',function(){ 
+    var Num1=document.getElementById('Numm1').value;
+    var Num2=document.getElementById('Numm2').value; 
+    document.getElementById('result').value=parseFloat(Num1)+parseFloat(Num2);
+}); 
+document.getElementById("SUB").addEventListener('click',function(){ 
+    var Num1=document.getElementById('Numm1').value;
+    var Num2=document.getElementById('Numm2').value; 
+    document.getElementById('result').value=parseFloat(Num1)-parseFloat(Num2);
+}); 
+document.getElementById("MUL").addEventListener('click',function(){ 
+    var Num1=document.getElementById('Numm1').value;
+    var Num2=document.getElementById('Numm2').value; 
+    document.getElementById('result').value=parseFloat(Num1)*parseFloat(Num2);
+}); 
+document.getElementById("DIV").addEventListener('click',function(){ 
+    var Num1=document.getElementById('Numm1').value;
+    var Num2=document.getElementById('Numm2').value; 
+    while(Check_Divide()){
+        alert("Divide over zero not allowed try agin");
+       Num2=document.getElementById("Numm2").value=1;
+        document.getElementById('result').value=parseFloat(Num1)/parseFloat(Num2);
+    }
+    document.getElementById('result').value=parseFloat(Num1)/parseFloat(Num2);
+}); 
+document.getElementById("MOD").addEventListener('click',function(){ 
+    var Num1=document.getElementById('Numm1').value;
+    var Num2=document.getElementById('Numm2').value; 
+    document.getElementById('result').value=parseFloat(Num1)%parseFloat(Num2);
+}); 
+
+ document.write("<br>")
+document.write("Get Result")
+var Result = document.createElement("input");
+Result.type = "text";
+Result.id = "result";
+document.body.appendChild(Result);
+</script>
+</html>

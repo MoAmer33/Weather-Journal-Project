@@ -1,0 +1,145 @@
+body{
+      background-image: url("https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?cs=srgb&dl=pexels-brett-sayles-1431822.jpg&fm=jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+  
+
+
+.holderHeadline{
+    font-size: 30px;
+    text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bold;
+}
+
+.holderZip{
+margin: auto;
+margin-top:20px;
+width:50%;
+height:20px;
+padding:30px;
+background-color: rgba(15, 15, 15, 0.5);
+display: flex;
+justify-content: center;
+border-radius: 20px;
+}
+
+#zip{
+    width:20vw;
+    height:30px;
+    margin-left:10px;
+    border-radius:10px;
+    color:whitesmoke;
+    background-color:rgba(34, 36, 37, 0.5);
+}
+
+.label{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+
+.holderFeel{
+    margin: auto;
+    margin-top:20px;
+    width:50%;
+    height:5vw;
+    padding:30px;
+    background-color: rgba(15, 15, 15, 0.5);
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+#feelings{
+    width:30vw;
+    height:5vw;
+    margin-left:10px;
+    border-radius: 10px;
+    color:whitesmoke;
+    background-color:rgba(34, 36, 37, 0.5);
+}
+
+#generate{
+display: flex;
+margin: auto;
+margin-top:20px;
+width: 10vw;
+font-size: 20px;
+font-weight:bold;
+height: 30px;
+background-color:rgb(180, 49, 49);
+border-radius: 20px;
+justify-content: center;
+}
+
+
+#entryHolder{
+display: grid;
+margin: auto;
+padding: 20px;
+margin-top:10px;
+width:55%;
+border-radius:10px;
+height:10vw;
+background-color: rgba(15, 15, 15, 0.5);
+grid-template-columns:500px 100px;
+grid-template-rows:100px  100px;
+grid-template-areas:"topLeft topRight"
+"bottomLeft bottomRight";
+}
+
+
+.title{
+text-align: center;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+font-size: 30px;
+}
+
+#content{
+margin: auto;
+padding: 30px;
+width:50%;
+font-size:1.5em;
+height:5vw;
+border-radius:10px;
+background-color: rgba(15, 15, 15, 0.5);
+color: whitesmoke;
+}
+#date{
+    grid-area:bottomRight;
+    font-size:30px;
+    color: whitesmoke;
+
+}
+
+#temp{
+    grid-area:topLeft;
+    font-size:30px; 
+    color: whitesmoke;
+ 
+}
+#city{
+    grid-area:topRight;
+    font-size:30px;
+    color: whitesmoke;
+    
+}
+#weather{
+    grid-area:bottomLeft;
+    font-size:30px;
+    color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+

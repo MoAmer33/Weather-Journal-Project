@@ -1,0 +1,21 @@
+{
+  "name": "win10",
+  "version": "1.0.0",
+  "description": "This project has four file index.html file, this file to write html and style.css file,this file to write css\r and app.js file, this file to write java script and server file this file to write servercode. This project take data of weather from website OpenWeatherMap.com and use server to take data by get route and process for it and return my data in post route to save this data object in my array and when click in button generate display data in page",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^3.0.0",
+    "server.js": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
